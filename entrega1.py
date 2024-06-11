@@ -1,12 +1,6 @@
 from simpleai.search import astar, SearchProblem
 from simpleai.search.viewers import WebViewer
 
-
-class Frasco:
-    def __init__(self, *colores):
-        self.colores = colores
-
-
 class ProblemSortEmAll(SearchProblem):
     def __init__(self, frascos, dificil):
         super(ProblemSortEmAll, self).__init__()
