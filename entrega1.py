@@ -25,6 +25,9 @@ class ProblemSortEmAll(SearchProblem):
         else:
             return False
 
+    def cost(state, action):
+        return 1
+    
     def heuristic(self,state):
         colores_disponibles = len(state) - 1
         frascos_cerrados = 0
