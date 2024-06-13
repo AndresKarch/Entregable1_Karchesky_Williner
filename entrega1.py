@@ -44,7 +44,6 @@ class ProblemSortEmAll(SearchProblem):
         origen -= 1
         color = new_state[origen][-1]
 
-        # Transferimos todo el líquido del color superior posible
         while new_state[origen] and new_state[origen][-1] == color and len(new_state[destino]) < 4:
             new_state[destino].append(new_state[origen].pop())
         return tuple(tuple(frasco) for frasco in new_state)
